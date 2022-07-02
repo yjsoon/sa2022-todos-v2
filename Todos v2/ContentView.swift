@@ -30,6 +30,9 @@ struct ContentView: View {
                         }
                     }
                 }
+                .onDelete { indexSet in
+                    todos.remove(atOffsets: indexSet)
+                }
             }
             .navigationTitle("Skill Issues")
         }
