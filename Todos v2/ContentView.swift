@@ -18,18 +18,18 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List($todos) { $todo in
-                NavigationLink {
-                    TodoDetailView(todo: $todo)
-                } label: {
-                    HStack {
-                        Image(systemName: todo.isCompleted ? "checkmark.circle.fill" : "circle")
-                        Text(todo.title)
-                            .strikethrough(todo.isCompleted)
+            List {
+                ForEach($todos) { $todo in
+                    NavigationLink {
+                        TodoDetailView(todo: $todo)
+                    } label: {
+                        HStack {
+                            Image(systemName: todo.isCompleted ? "checkmark.circle.fill" : "circle")
+                            Text(todo.title)
+                                .strikethrough(todo.isCompleted)
+                        }
                     }
                 }
-                
-                
             }
             .navigationTitle("Skill Issues")
         }
