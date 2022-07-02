@@ -16,6 +16,8 @@ struct ContentView: View {
         Todo(title: "Gotten hot chocolate", isCompleted: true)
     ]
     
+    @State var isSheetGiven = false
+    
     var body: some View {
         NavigationView {
             List {
@@ -42,7 +44,17 @@ struct ContentView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     EditButton()
                 }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                       isSheetGiven = true
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
             }
+        }
+        .sheet(isPresented: $isSheetGiven) {
+            NewTodoView(todos: $todos)
         }
     }
 }
