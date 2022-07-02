@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF097901286FEA9C007F51AA /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF097900286FEA9C007F51AA /* TodoDetailView.swift */; };
 		AF55A21B286FD2BE0043FBCB /* Todos_v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF55A21A286FD2BE0043FBCB /* Todos_v2App.swift */; };
 		AF55A21D286FD2BE0043FBCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF55A21C286FD2BE0043FBCB /* ContentView.swift */; };
 		AF55A21F286FD2C10043FBCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF55A21E286FD2C10043FBCB /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF097900286FEA9C007F51AA /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
 		AF55A217286FD2BD0043FBCB /* Todos v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todos v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF55A21A286FD2BE0043FBCB /* Todos_v2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todos_v2App.swift; sourceTree = "<group>"; };
 		AF55A21C286FD2BE0043FBCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				AF55A21A286FD2BE0043FBCB /* Todos_v2App.swift */,
 				AF55A21C286FD2BE0043FBCB /* ContentView.swift */,
+				AF097900286FEA9C007F51AA /* TodoDetailView.swift */,
 				AF55A228286FD36E0043FBCB /* Todo.swift */,
 				AF55A21E286FD2C10043FBCB /* Assets.xcassets */,
 				AF55A220286FD2C10043FBCB /* Preview Content */,
@@ -143,6 +146,7 @@
 				AF55A21D286FD2BE0043FBCB /* ContentView.swift in Sources */,
 				AF55A229286FD36E0043FBCB /* Todo.swift in Sources */,
 				AF55A21B286FD2BE0043FBCB /* Todos_v2App.swift in Sources */,
+				AF097901286FEA9C007F51AA /* TodoDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
